@@ -1,0 +1,39 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS / editor
+.vscode/
+.DS_Store
+
+# Raw data - no subir a Git
+data/raw/
+data/unzipped/
+
+# Datos procesados pesados - se manejarán con DVC
+data/processed/*.csv
+data/processed/*.pt
+data/processed/*.json
+data/processed/*.joblib
+data/processed/*.parquet
+
+# Modelos y resultados pesados - DVC
+models/
+results/*.csv
+results/*.png
+results/*.pt
+results/*.joblib
+
+# DARPA / Avro / compressed
+*.bin
+*.bin.*
+*.gz
+*.avro
+
+# Secrets
+.env
+*.key
+*.pem
