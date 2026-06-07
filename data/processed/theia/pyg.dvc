@@ -1,0 +1,6 @@
+outs:
+- md5: e8e87dbde8936c5e90777a6703c055a6.dir
+  size: 6234171
+  nfiles: 36
+  hash: md5
+  path: pyg

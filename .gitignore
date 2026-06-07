@@ -5,29 +5,34 @@ __pycache__/
 *.pyo
 *.pyd
 
-# OS / editor
+# OS / editors
 .vscode/
 .DS_Store
 
-# Raw data - no subir a Git
-data/raw/
+# Raw and processed data are versioned with DVC, not Git
+data/raw/**
+data/raw/theia/
+!data/raw/
+!data/raw/*.dvc
+!data/raw/theia.dvc
+
 data/unzipped/
+data/processed/**
+data/processed/theia/v2/
+data/processed/theia/v3/
+data/processed/theia/v4/
+data/processed/theia/pyg/
+!data/processed/
+!data/processed/theia/
+!data/processed/theia/*.dvc
 
-# Datos procesados pesados - se manejarán con DVC
-data/processed/*.csv
-data/processed/*.pt
-data/processed/*.json
-data/processed/*.joblib
-data/processed/*.parquet
-
-# Modelos y resultados pesados - DVC
+# Local DVC store and generated outputs
+.dvc_remote/
+results/
+logs/
 models/
-results/*.csv
-results/*.png
-results/*.pt
-results/*.joblib
 
-# DARPA / Avro / compressed
+# DARPA / Avro / compressed artifacts
 *.bin
 *.bin.*
 *.gz

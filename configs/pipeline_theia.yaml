@@ -1,0 +1,11 @@
+raw_dir: data/raw/theia
+v2_dir: data/processed/theia/v2
+v3_dir: data/processed/theia/v3
+v4_windows_dir: data/processed/theia/v4/windows
+pyg_dir: data/processed/theia/pyg
+qc_dir: results/theia_qc
+window_seconds: 10
+batch_edges: 500000
+rclone_remote: nubeglenp
+rclone_path: gnn-theia-dvc-store
+local_dvc_store: .dvc_remote

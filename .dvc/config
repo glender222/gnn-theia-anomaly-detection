@@ -1,0 +1,7 @@
+[cache]
+    type = hardlink
+    dir = ../.dvc_remote
+[core]
+    remote = localstore
+['remote "localstore"']
+    url = ../.dvc_remote
